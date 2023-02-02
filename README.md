@@ -24,7 +24,7 @@ class Comment(BaseModel):
 
 ### multi models.py files: use seperate modules of `models.py`:  
 ```
-app1
+app1/
  --models/
    -- __init__.py
    -- post.py
