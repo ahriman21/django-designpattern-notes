@@ -29,7 +29,6 @@ app1
    -- __init__.py
    -- post.py
    -- category.py
-   
 ```
 ###### __init__.py :
 ```
