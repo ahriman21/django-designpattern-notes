@@ -36,3 +36,23 @@ from post.py import Post
 from category import Category
 
 ```
+
+---
+# Views  
+### implement crud by generic views:
+```
+class ImpDateDetail(generic.DetailView):
+    model = models.ImportantDate
+
+class ImpDateCreate(generic.CreateView):
+    model = models.ImportantDate
+    form_class = ImportantDateForm
+
+class ImpDateUpdate(generic.UpdateView):
+    model = models.ImportantDate
+    form_class = ImportantDateForm
+
+class ImpDateDelete(generic.DeleteView):
+    model = models.ImportantDate
+    success_url = reverse_lazy("formschapter:impdate_list")
+```
