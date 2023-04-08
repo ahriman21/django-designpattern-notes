@@ -8,7 +8,7 @@ class BaseModel(modesl.Model):
   created_datetime = models.CharField(max_length=255)
   
   class Meta:
-    abstract_class =True
+    abstract = True
     
     
 class Post(BaseModel):
